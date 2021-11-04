@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LibrarianPageController">
+   <children>
+      <ImageView fitHeight="517.0" fitWidth="633.0" layoutX="-1.0" opacity="0.53" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@home.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="220.0" layoutY="194.0" mnemonicParsing="false" onAction="#switchToCheckOut" prefHeight="25.0" prefWidth="114.0" text="CheckOut" />
+      <Button layoutX="162.0" layoutY="319.0" mnemonicParsing="false" onAction="#switchToHome" text="Home" />
+      <Button layoutX="42.0" layoutY="194.0" mnemonicParsing="false" onAction="#switchToSearch" prefHeight="25.0" prefWidth="114.0" text="Search" />
+      <Label layoutX="141.0" layoutY="22.0" text="Librarian">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="42.0" layoutY="91.0" mnemonicParsing="false" onAction="#switchToViewItem" prefHeight="25.0" prefWidth="114.0" text="View Item" />
+      <Button layoutX="220.0" layoutY="143.0" mnemonicParsing="false" onAction="#switchToAddMember" prefHeight="25.0" prefWidth="114.0" text="Add Member" />
+      <Button layoutX="220.0" layoutY="91.0" mnemonicParsing="false" onAction="#switchToCheckOutRecord" text="CheckOut Records" />
+      <Button layoutX="42.0" layoutY="143.0" mnemonicParsing="false" onAction="#switchToAddItem" prefHeight="25.0" prefWidth="114.0" text="Add Item" />
+      <Label layoutX="42.0" layoutY="259.0" text="Item ID:" />
+      <TextField fx:id="itemIdTF" layoutX="99.0" layoutY="255.0" promptText="enter item Id" />
+      <Button layoutX="268.0" layoutY="255.0" mnemonicParsing="false" onAction="#CheckIn" prefHeight="25.0" prefWidth="66.0" text="CheckIN" />
+      <Label fx:id="msg" layoutX="159.0" layoutY="288.0" textFill="#03bf25" />
+   </children>
+</Pane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+	<center>
+		<Pane prefHeight="438.0" prefWidth="526.0" BorderPane.alignment="CENTER">
+			<children>
+				<Label layoutX="198.0" layoutY="59.0" text="Display">
+					<font>
+						<Font size="36.0" />
+					</font>
+				</Label>
+				<Button layoutX="190.0" layoutY="160.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="146.0" text="Specific Items">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Button>
+				<Button layoutX="407.0" layoutY="381.0" mnemonicParsing="false" text="Back to Menu">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Button>
+				<Button layoutX="190.0" layoutY="230.0" mnemonicParsing="false" text="List of All Items">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Button>
+			</children>
+		</Pane>
+	</center>
+</BorderPane>

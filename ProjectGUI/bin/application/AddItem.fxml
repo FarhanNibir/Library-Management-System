@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddIController">
+   <children>
+      <Label layoutX="184.0" layoutY="14.0" text="Add Item">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="222.0" prefHeight="17.0" prefWidth="98.0" text="Item Id               :" />
+      <Label layoutX="95.0" layoutY="265.0" prefHeight="17.0" prefWidth="98.0" text="Title                   :" />
+      <Label layoutX="95.0" layoutY="306.0" prefHeight="17.0" prefWidth="98.0" text="Authors              :" />
+      <Label layoutX="95.0" layoutY="346.0" prefHeight="17.0" prefWidth="98.0" text="Category            :" />
+      <Label layoutX="95.0" layoutY="386.0" prefHeight="17.0" prefWidth="98.0" text="Publish Year     :" />
+      <Label fx:id="mylabel" layoutX="95.0" layoutY="424.0" prefHeight="17.0" prefWidth="98.0" text="Publisher Name  :" />
+      <TextField fx:id="publisherName" layoutX="214.0" layoutY="420.0" />
+      <TextField fx:id="publishYear" layoutX="214.0" layoutY="382.0" />
+      <TextField fx:id="category" layoutX="214.0" layoutY="342.0" />
+      <TextField fx:id="authors" layoutX="214.0" layoutY="302.0" />
+      <TextField fx:id="title" layoutX="214.0" layoutY="261.0" />
+      <TextField fx:id="itemId" layoutX="214.0" layoutY="218.0" />
+      <RadioButton fx:id="Book" layoutX="46.0" layoutY="127.0" mnemonicParsing="false" text="Book">
+         <toggleGroup>
+            <ToggleGroup fx:id="singel" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="Publication" layoutX="189.0" layoutY="129.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Publication" toggleGroup="$singel" />
+      <RadioButton fx:id="Movie" layoutX="357.0" layoutY="127.0" mnemonicParsing="false" text="Movie" toggleGroup="$singel" />
+      <Button layoutX="189.0" layoutY="477.0" mnemonicParsing="false" onAction="#switchToMenu" text="Back to Menu" />
+      <Button layoutX="399.0" layoutY="302.0" mnemonicParsing="false" onAction="#AddItems" prefHeight="25.0" prefWidth="61.0" text="ADD" textAlignment="CENTER" />
+      <Button layoutX="210.0" layoutY="168.0" mnemonicParsing="false" onAction="#okay" text="OKAY" />
+      <Label layoutX="126.0" layoutY="66.0" prefHeight="27.0" prefWidth="247.0" text="Choose One And Click OKAY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

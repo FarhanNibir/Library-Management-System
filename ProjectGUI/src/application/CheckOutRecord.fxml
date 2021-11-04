@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.COutController">
+   <children>
+      <Label layoutX="199.0" layoutY="14.0" text="Check Out Records">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="536.0" layoutY="400.0" mnemonicParsing="false" onAction="#switchToLibrarian" text="Back" />
+      <ListView fx:id="listView" layoutX="22.0" layoutY="142.0" prefHeight="223.0" prefWidth="555.0" />
+      <Label layoutX="47.0" layoutY="78.0" text="Item ID :" />
+      <TextField fx:id="itemidtf" layoutX="92.0" layoutY="74.0" />
+      <TextField fx:id="memberidtf" layoutX="414.0" layoutY="74.0" />
+      <Label layoutX="348.0" layoutY="78.0" text="Member ID :" />
+      <Button layoutX="122.0" layoutY="107.0" mnemonicParsing="false" onAction="#checkoutRecordItemId" text="Item Record " />
+      <Button layoutX="423.0" layoutY="107.0" mnemonicParsing="false" onAction="#checkoutRecordmemberId" text="Member Record" />
+   </children>
+</Pane>
